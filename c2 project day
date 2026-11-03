@@ -1,0 +1,41 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int a, c;
+    int aa, ac;
+    int ba, bc;
+    int ghat, aarti, boat, total;
+    printf("Welcome to Varanasi Ganga Ghat\n");
+    printf("\nGanga Ghat Ticket Booking\n");
+    printf("Enter Adult: ");
+    scanf("%d", &a);
+    printf("Enter Children: ");
+    scanf("%d", &c);
+    ghat = (a * 100) + (c * 50);
+    printf("\nGanga Aarti Booking\n");
+    printf("Enter Adult: ");
+    scanf("%d", &aa);
+    printf("Enter Children: ");
+    scanf("%d", &ac);
+    aarti = (aa * 100) + (ac * 50);
+    printf("\nBoat Ride Booking\n");
+    printf("Enter Adult: ");
+    scanf("%d", &ba);
+    printf("Enter Children: ");
+    scanf("%d", &bc);
+    boat = (ba * 300) + (bc * 150);
+    total = ghat + aarti + boat;
+    printf("\n------ Your Bill ------\n");
+    printf("Ganga Ghat Price = %d\n", ghat);
+    printf("Ganga Aarti Price = %d\n", aarti);
+    printf("Boat Ride Price = %d\n", boat);
+    printf("-----------------------\n");
+    printf("Total Amount = %d\n", total);
+    printf("\nThank You for Visiting Varanasi!");
+
+    return 0;
+}
+
+
